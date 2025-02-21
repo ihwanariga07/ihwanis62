@@ -35,5 +35,6 @@ Route::get('/', function () {
 // });
 
 Route::get('/mahasiswa', function(){
-    return view('mahasiswa.index');
+    $data = ["khalifah","ihwan ariga","Herdio","Kania","Putri chantika","ramadhani"];
+    return view ('mahasiswa.index')->with('mhs',$data);
 });
