@@ -18,9 +18,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 // Route::get('/homepage', function () {
 //     return view('halaman1');
@@ -30,7 +30,10 @@ use Illuminate\Support\Facades\Route;
 //     echo "ini halaman Mahasiswa dengan nama $nama";
 // });
 
-
 // Route::get('/hello/hello1/hello2/hello3',function (){
 //     echo "Hello World";
 // });
+
+Route::get('/mahasiswa', function(){
+    return view('mahasiswa.index');
+});
